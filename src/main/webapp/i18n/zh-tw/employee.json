@@ -1,0 +1,33 @@
+{
+    "jhipsterSampleApplicationApp": {
+        "employee": {
+            "home": {
+                "title": "Employees",
+                "createLabel": "建立一筆新的 Employee",
+                "createOrEditLabel": "建立或編輯 Employee"
+            },
+            "created": "新的 Employee 建立成功，識別碼為 {{ param }}",
+            "updated": "識別碼為 {{ param }} 的 Employee 更新成功",
+            "deleted": "識別碼為 {{ param }} 的 Employee 刪除成功",
+            "delete": {
+                "question": "您確定要刪除 Employee {{ id }} 嗎?"
+            },
+            "detail": {
+                "title": "Employee"
+            },
+            "firstName": "First Name",
+            "lastName": "Last Name",
+            "email": "Email",
+            "phoneNumber": "Phone Number",
+            "hireDate": "Hire Date",
+            "salary": "Salary",
+            "commissionPct": "Commission Pct",
+            "department": "Department",
+            "job": "Job",
+            "manager": "Manager",
+            "help": {
+                "firstName": "The firstname attribute."
+            }
+        }
+    }
+}
