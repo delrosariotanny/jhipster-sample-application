@@ -1,0 +1,34 @@
+
+entity Team {
+	name String,
+    code String,
+    processOrder Boolean,
+    processExternalTask Boolean,
+    active Boolean,
+    createdDate Instant
+}
+
+entity TeamMember {
+	updatedTime Instant
+}
+
+
+// defining multiple OneToMany relationships with comments
+relationship OneToMany {
+    TeamMember{user} to User
+}
+
+relationship ManyToOne {
+    Team{teamHeadId(login)} to User,
+    TeamMember{team} to Team
+}
+
+// Set pagination options
+paginate Team, TeamMember with infinite-scroll
+
+dto * with mapstruct
+
+// Set service options to all except few
+service all with serviceImpl
+// Set an angular suffix
+angularSuffix * with pmp_
